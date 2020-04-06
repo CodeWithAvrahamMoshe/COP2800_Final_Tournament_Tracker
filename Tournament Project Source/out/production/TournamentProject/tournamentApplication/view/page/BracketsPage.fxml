@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.effect.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<HBox alignment="CENTER" prefHeight="478.0" prefWidth="570.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="tournamentApplication.controller.page.BracketsPageController">
+   <children>
+      <VBox alignment="CENTER" prefHeight="478.0" prefWidth="586.0" HBox.hgrow="ALWAYS">
+         <children>
+            <AnchorPane prefHeight="478.0" prefWidth="583.0" VBox.vgrow="ALWAYS">
+               <children>
+                  <HBox alignment="CENTER" prefHeight="78.0" prefWidth="600.0" style="-fx-background-color: #ccf1ff;" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0">
+                     <children>
+                        <Label text="Brackets" textFill="#0091f8">
+                           <font>
+                              <Font name="Segoe UI Bold" size="34.0" />
+                           </font>
+                        </Label>
+                     </children>
+                     <effect>
+                        <DropShadow color="#6b6b6b" />
+                     </effect>
+                  </HBox>
+                  <ScrollPane fx:id="scrollPane" fitToHeight="true" layoutX="11.0" layoutY="98.0" prefHeight="281.0" prefWidth="550.0" AnchorPane.bottomAnchor="99.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="99.0" VBox.vgrow="ALWAYS">
+                     <content>
+                        <HBox alignment="CENTER" prefWidth="3000.0">
+                           <children>
+                              <VBox fx:id="root" alignment="CENTER" prefWidth="3000.0" spacing="10.0" AnchorPane.bottomAnchor="-2.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" HBox.hgrow="ALWAYS">
+                                 <padding>
+                                    <Insets bottom="20.0" />
+                                 </padding>
+                              </VBox>
+                           </children>
+                        </HBox>
+                     </content>
+                  </ScrollPane>
+                  <HBox alignment="CENTER" layoutX="9.0" layoutY="400.0" prefHeight="78.0" prefWidth="600.0" spacing="100.0" style="-fx-background-color: #ccf1ff;" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0">
+                     <children>
+                        <GridPane alignment="CENTER" prefHeight="78.0" prefWidth="582.0" HBox.hgrow="ALWAYS">
+                           <children>
+                              <Button alignment="CENTER" mnemonicParsing="false" onMouseClicked="#onSchedualeButton_Click" prefHeight="65.0" prefWidth="121.0" text="Scheduale" GridPane.halignment="CENTER">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                              </Button>
+                              <Button fx:id="standingButton" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onMouseClicked="#onStandingButton_Click" prefHeight="63.0" prefWidth="111.0" text="Standings" textAlignment="CENTER" GridPane.columnIndex="2" GridPane.halignment="CENTER">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                              </Button>
+                              <Button fx:id="bracketButton" alignment="CENTER" mnemonicParsing="false" prefHeight="65.0" prefWidth="121.0" text="Brackets" GridPane.columnIndex="1" GridPane.halignment="CENTER">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                              </Button>
+                           </children>
+                           <columnConstraints>
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                           </columnConstraints>
+                           <rowConstraints>
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                           </rowConstraints>
+                        </GridPane>
+                     </children>
+                     <effect>
+                        <DropShadow color="#6b6b6b" />
+                     </effect>
+                  </HBox>
+               </children>
+            </AnchorPane>
+         </children>
+      </VBox>
+   </children>
+</HBox>

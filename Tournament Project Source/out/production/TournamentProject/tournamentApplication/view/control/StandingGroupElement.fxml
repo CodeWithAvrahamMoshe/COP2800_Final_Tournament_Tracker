@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<HBox fx:id="root" alignment="CENTER" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="tournamentApplication.controller.control.StandingGroupElementController">
+   <children>
+      <VBox alignment="CENTER">
+         <children>
+            <AnchorPane prefHeight="199.0" prefWidth="600.0" VBox.vgrow="ALWAYS">
+               <children>
+                  <Separator layoutX="24.0" layoutY="112.0" prefHeight="20.0" prefWidth="563.0" />
+                  <Label layoutX="35.0" layoutY="85.0" text="Team">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="groupNameLabel" layoutX="34.0" layoutY="32.0" prefHeight="39.0" prefWidth="191.0" text="Group Name">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="318.0" layoutY="85.0" text="GP">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="353.0" layoutY="85.0" text="W">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="388.0" layoutY="85.0" text="L">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="415.0" layoutY="85.0" text="D">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="445.0" layoutY="85.0" text="GF">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="477.0" layoutY="85.0" text="GA">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="515.0" layoutY="85.0" text="GD">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="552.0" layoutY="85.0" text="Pts">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <VBox fx:id="teamListVBox" layoutX="24.0" layoutY="132.0" prefHeight="55.0" prefWidth="563.0" />
+               </children>
+            </AnchorPane>
+         </children>
+      </VBox>
+   </children>
+</HBox>

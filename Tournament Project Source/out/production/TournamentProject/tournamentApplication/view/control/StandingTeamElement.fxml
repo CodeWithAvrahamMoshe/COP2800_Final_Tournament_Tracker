@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id="root" prefHeight="50.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="tournamentApplication.controller.control.StandingTeamElementController">
+   <children>
+      <Label fx:id="winsLabel" alignment="CENTER" layoutX="324.0" layoutY="13.0" prefWidth="30.0" text="W">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="loosesLabel" alignment="CENTER" layoutX="354.0" layoutY="13.0" prefWidth="30.0" text="L">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="drawLabel" alignment="CENTER" layoutX="382.0" layoutY="13.0" prefWidth="30.0" text="D">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="gamesPlayedLabel" alignment="CENTER" layoutX="290.0" layoutY="13.0" prefWidth="30.0" text="GP">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="teamNameLabel" layoutX="12.0" layoutY="13.0" prefWidth="150.0" text="Team Name">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="goalsAgeistLabel" alignment="CENTER" layoutX="448.0" layoutY="13.0" prefWidth="30.0" text="GA">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="pointsLabel" alignment="CENTER" layoutX="524.0" layoutY="13.0" prefWidth="30.0" text="Pts">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="goalsForLabel" alignment="CENTER" layoutX="416.0" layoutY="13.0" prefWidth="30.0" text="GF">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="goalsDifferentialLabel" alignment="CENTER" layoutX="487.0" layoutY="13.0" prefWidth="30.0" text="GD">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

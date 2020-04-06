@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<HBox alignment="CENTER" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="tournamentApplication.controller.page.TournamentSettingsController">
+   <children>
+      <VBox alignment="CENTER">
+         <children>
+            <AnchorPane prefHeight="400.0" prefWidth="600.0">
+               <children>
+                  <Label alignment="CENTER" layoutX="111.0" layoutY="20.0" text="Tournament Settings" textFill="#00a1ff" AnchorPane.leftAnchor="83.0" AnchorPane.rightAnchor="83.0" AnchorPane.topAnchor="20.0">
+                     <font>
+                        <Font name="System Bold" size="41.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="192.0" layoutY="98.0" text="Enter Tournament Name">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="tournamentTextField" layoutX="164.0" layoutY="136.0" prefHeight="35.0" prefWidth="273.0" promptText="Tournament Name">
+                     <font>
+                        <Font size="18.0" />
+                     </font></TextField>
+                  <Label layoutX="50.0" layoutY="251.0" text="Select Number of Teams">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Label>
+                  <Slider fx:id="numberOfTeamsSlider" blockIncrement="1.0" layoutX="36.0" layoutY="287.0" majorTickUnit="1.0" max="40.0" min="8.0" minorTickCount="0" prefHeight="22.0" prefWidth="244.0" showTickLabels="true" snapToTicks="true" value="2.0" />
+                  <Button layoutX="214.0" layoutY="338.0" mnemonicParsing="false" onMouseClicked="#NextButtin_Clicked" prefHeight="39.0" prefWidth="174.0" text="Confirm Settings" AnchorPane.bottomAnchor="23.0" AnchorPane.leftAnchor="214.0" AnchorPane.rightAnchor="212.0" AnchorPane.topAnchor="338.0">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Button>
+                  <Slider fx:id="numberOfGroupsSlider" blockIncrement="1.0" layoutX="316.0" layoutY="287.0" majorTickUnit="1.0" max="8.0" min="2.0" minorTickCount="0" prefHeight="22.0" prefWidth="244.0" showTickLabels="true" snapToTicks="true" value="2.0" />
+                  <Label layoutX="325.0" layoutY="251.0" text="Select Number of Groups">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Label>
+                  <DatePicker fx:id="tournamentStartDate" layoutX="213.0" layoutY="200.0" />
+               </children>
+            </AnchorPane>
+         </children>
+      </VBox>
+   </children>
+</HBox>

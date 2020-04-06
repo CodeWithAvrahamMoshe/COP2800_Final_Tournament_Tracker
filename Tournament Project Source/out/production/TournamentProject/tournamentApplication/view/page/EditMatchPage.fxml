@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<HBox alignment="CENTER" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="tournamentApplication.controller.page.EditMatchPageController">
+   <children>
+      <VBox alignment="CENTER" HBox.hgrow="NEVER">
+         <children>
+            <AnchorPane prefHeight="400.0" prefWidth="600.0" VBox.vgrow="NEVER">
+               <children>
+                  <Label fx:id="team1Label" layoutX="214.0" layoutY="132.0" text="Team 1">
+                     <font>
+                        <Font size="27.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="team1ScoreTextBox" layoutX="324.0" layoutY="133.0" prefHeight="37.0" prefWidth="62.0" promptText="score">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </TextField>
+                  <Label fx:id="team2Label" layoutX="214.0" layoutY="230.0" text="Team 2">
+                     <font>
+                        <Font size="27.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER" layoutX="163.0" layoutY="22.0" text="Edit Match" textFill="#0095ff">
+                     <font>
+                        <Font name="System Bold" size="55.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="team2ScoreTextBox" layoutX="324.0" layoutY="231.0" prefHeight="37.0" prefWidth="62.0" promptText="score">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </TextField>
+                  <Button layoutX="211.0" layoutY="324.0" mnemonicParsing="false" onMouseClicked="#onMatchUpdate_Click" prefHeight="45.0" prefWidth="179.0" text="Update Score">
+                     <font>
+                        <Font size="21.0" />
+                     </font>
+                  </Button>
+               </children>
+            </AnchorPane>
+         </children>
+      </VBox>
+   </children>
+</HBox>
